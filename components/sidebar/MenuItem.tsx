@@ -6,7 +6,7 @@ import { IconType } from "react-icons";
 import { LucideIcon } from "lucide-react";
 
 interface MenuItemProps {
-  icon: LucideIcon | IconType;
+  icon: LucideIcon | IconType | any;
   label: string;
   href?: string;
   active?: boolean;
