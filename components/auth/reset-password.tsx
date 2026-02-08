@@ -166,11 +166,9 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({
               placeholder="Create a new password"
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
-              onBlur={() => handleBlur("newPassword")}
               error={errors.newPassword}
               required
               disabled={isLoading}
-              size="sm"
             />
           </div>
           {newPassword && (
@@ -221,11 +219,9 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({
               placeholder="Confirm new password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              onBlur={() => handleBlur("confirmPassword")}
               error={errors.confirmPassword}
               required
               disabled={isLoading}
-              size="sm"
             />
           </div>
           {errors.confirmPassword && (
