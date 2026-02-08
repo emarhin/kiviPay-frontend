@@ -25,7 +25,7 @@ const onboard = () => {
     companyName: string,
     industry: string,
   ): void {
-    throw new Error("Function not implemented.");
+    window.location.href = "/dashboard";
   }
 
   function handleBack(): void {
