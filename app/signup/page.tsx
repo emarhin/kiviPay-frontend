@@ -2,7 +2,7 @@
 import SignUp from "@/components/auth/signup";
 import AuthBase from "@/components/auth/base";
 import React from "react";
-export default async function LoginPage() {
+export default function handleSignUp() {
   const [loading, setLoading] = React.useState(false);
 
   const handleSignUp = async (
@@ -39,7 +39,7 @@ export default async function LoginPage() {
       sideImageSrc=""
       AuthComponent={() => (
         <SignUp
-          onSignUp={handleSignUp}
+          onSignUp={() => handleSignUp}
           onGoogleLogin={handleGoogleLogin}
           logoSrc="/thundar-logo.png" // Optional: path to your logo
           isLoading={loading}
