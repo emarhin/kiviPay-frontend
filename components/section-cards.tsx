@@ -31,7 +31,7 @@ function StatCard({
   fillColor?: string;
 }) {
   return (
-    <Card className="relative overflow-hidden p-5 shadow-none rounded-none first:rounded-l-xl last:rounded-r-xl border-l-0 first:border-l">
+    <Card className="relative overflow-hidden p-5 shadow-none rounded-none  border-0 bg-[#FAFAFA]">
       <div className="flex justify-between items-center">
         {/* LEFT */}
         <div className="space-y-2">
@@ -83,7 +83,7 @@ function StatCard({
 }
 export function SectionCards() {
   return (
-    <div className="grid grid-cols-1 gap-4 lg:gap-0 px-4 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
+    <div className="grid grid-cols-1 gap-4  lg:gap-2 px-4 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
       <StatCard
         title="Payments Received"
         value="1,200"

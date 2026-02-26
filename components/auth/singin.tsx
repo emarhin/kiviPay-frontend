@@ -162,7 +162,7 @@ const Login: React.FC<LoginProps> = ({
           <div className="mt-1 text-right">
             <a
               href="/forgot-password"
-              className="text-xs text-blue-600 hover:text-blue-800"
+              className="text-xs text-black hover:text-[#FDC700]"
             >
               Forgot Password?
             </a>
@@ -173,7 +173,7 @@ const Login: React.FC<LoginProps> = ({
           <button
             type="submit"
             disabled={!isFormValid() || isLoading}
-            className="w-full bg-gray-900 hover:bg-black disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 rounded font-medium transition-colors duration-200 text-sm"
+            className="w-full bg-[#FDC700] hover:bg-[#FDC700]/80 disabled:bg-[#FDC700]/25 disabled:cursor-not-allowed text-[#733E0B] py-2 rounded font-medium transition-colors duration-200 text-sm"
           >
             {isLoading ? (
               <span className="flex items-center justify-center gap-1">
@@ -217,7 +217,7 @@ const Login: React.FC<LoginProps> = ({
           Don't have an Account?{" "}
           <a
             href="/signup"
-            className="text-blue-600 hover:text-blue-800 font-medium"
+            className="text-black hover:text-[#FDC700] font-medium"
           >
             Sign Up
           </a>

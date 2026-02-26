@@ -186,7 +186,7 @@ const CompanyOnboarding: React.FC<CompanyOnboardingProps> = ({
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-gray-900 h-2 rounded-full transition-all duration-300"
+              className="bg-[#FDC700] h-2 rounded-full transition-all duration-300"
               style={{ width: `${progressPercentage}%` }}
             />
           </div>
@@ -301,7 +301,7 @@ const CompanyOnboarding: React.FC<CompanyOnboardingProps> = ({
                       onClick={() => setNumberOfEmployees(size)}
                       className={`py-2 text-xs rounded-md border ${
                         numberOfEmployees === size
-                          ? "bg-gray-900 text-white border-gray-900"
+                          ? "bg-[#FDC700] text-white border-gray-900"
                           : "border-gray-300 text-gray-700 hover:bg-gray-50"
                       }`}
                     >
@@ -474,7 +474,7 @@ const CompanyOnboarding: React.FC<CompanyOnboardingProps> = ({
           type="button"
           onClick={handleNext}
           disabled={isLoading}
-          className="flex-1 bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg font-medium disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+          className="w-full bg-[#FDC700] hover:bg-[#FDC700]/80 disabled:bg-[#FDC700]/25 disabled:cursor-not-allowed text-[#733E0B] py-2 rounded font-medium transition-colors duration-200 text-sm"
         >
           {isLoading ? (
             <span className="flex items-center justify-center gap-2">

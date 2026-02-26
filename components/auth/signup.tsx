@@ -352,7 +352,7 @@ const SignUp: React.FC<SignUpProps> = ({
           <button
             type="submit"
             disabled={!isFormValid() || isLoading}
-            className="w-full bg-gray-900 hover:bg-black disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 rounded font-medium transition-colors duration-200 text-sm"
+            className="w-full bg-[#FDC700] hover:bg-[#FDC700]/80 disabled:bg-[#FDC700]/25 disabled:cursor-not-allowed text-[#733E0B] py-2 rounded font-medium transition-colors duration-200 text-sm"
           >
             {isLoading ? (
               <span className="flex items-center justify-center gap-1">
@@ -396,14 +396,14 @@ const SignUp: React.FC<SignUpProps> = ({
           By creating an account, you agree to our{" "}
           <a
             href="/terms"
-            className="text-blue-600 hover:text-blue-800 underline"
+            className="text-black hover:text-[#FDC700] underline"
           >
             Terms
           </a>{" "}
           and{" "}
           <a
             href="/privacy"
-            className="text-blue-600 hover:text-blue-800 underline"
+            className="text-black hover:text-[#FDC700] underline"
           >
             Privacy
           </a>
@@ -416,7 +416,7 @@ const SignUp: React.FC<SignUpProps> = ({
           Already have an Account?{" "}
           <a
             href="/login"
-            className="text-blue-600 hover:text-blue-800 font-medium"
+            className="text-black hover:text-[#FDC700] font-medium"
           >
             Sign In
           </a>

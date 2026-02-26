@@ -23,19 +23,19 @@ const BaseAuth: React.FC<BaseProps> = ({
               className="object-cover w-full h-full"
             />
             {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-gray-900/50"></div>
+            <div className="absolute inset-0 bg-[#FFFCF4]"></div>
           </>
         ) : (
-          <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-800"></div>
+          <div className="w-full h-full bg-[#FFFCF4]"></div>
         )}
 
         {/* Overlay with centered text */}
         <div className="absolute inset-0 flex items-center justify-center p-8">
-          <div className="text-white text-center max-w-xl">
+          <div className="text-[#FDC700] text-center max-w-xl">
             <h1 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">
               Make collection of payment easier for business
             </h1>
-            <p className="text-gray-200 text-base lg:text-lg">
+            <p className="text-[#FDCE1D] text-base lg:text-lg">
               Thundarpay makes it easy for businesses to accept payments from
               their customers with lightning-fast transactions.
             </p>

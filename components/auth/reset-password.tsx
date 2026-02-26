@@ -241,7 +241,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({
               !!errors.confirmPassword ||
               isLoading
             }
-            className="w-full bg-gray-900 hover:bg-black disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 rounded font-medium transition-colors duration-200 text-sm"
+            className="w-full bg-[#FDC700] hover:bg-[#FDC700]/80 disabled:bg-[#FDC700]/25 disabled:cursor-not-allowed text-[#733E0B] py-2 rounded font-medium transition-colors duration-200 text-sm"
           >
             {isLoading ? (
               <span className="flex items-center justify-center gap-1">
